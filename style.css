@@ -1,0 +1,132 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+body{
+  overflow:hidden;
+}
+.game_rules{
+  z-index: 1;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: calc(50% - 117px);
+  width: 200px;
+  height: 300px;
+  border: 2px solid black;
+  background: burlywood;
+  padding: 15px;
+  text-align: center;
+}
+.rule{
+ margin-bottom: 20px;
+}
+.game_screen{
+  position: relative;
+  background: url(img/fon.jpg) no-repeat;
+  height: 100vh;
+  background-size: cover; 
+  padding-top: 150px;
+}
+.game_field{
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: gray;
+}
+.row_1,.row_2,.row_3,.row_4{
+  display: flex;
+  justify-content: end;
+  box-sizing: border-box;
+  border-bottom: 3px dashed white;
+  height: 100px;
+}
+.car{
+  position: absolute;
+  width: 100px;
+  height: 70px;
+  background: url(img/gamer_car.png) no-repeat;
+  background-color: gray;
+  border-radius: 45px;
+  padding: 10px 0;
+  background-position: center center;
+  transition:  0.2s linear;
+}
+          /* styles for elements */
+.coin{
+   background: url(img/coin.png) no-repeat;
+}
+.enemy{
+   background: url(img/enemy.png) no-repeat;
+}
+.fix{
+   background: url(img/fix.png) no-repeat;
+}
+.wall{
+   background: url(img/wall.png) no-repeat;
+}
+.empty, .coin, .enemy, .fix, .wall {
+  width: 100px;
+  height: 100px;
+  background-position: center center;
+}
+.life_field, 
+.coins_field, 
+.timer_field{
+   z-index: 1;
+   margin-top: 100px;
+   position: absolute;
+   color: #fcf7c4;
+}
+
+ .life_field{ 
+   display: flex;
+   margin-left: 140px;
+ }
+.heart{
+  width: 20px;
+  height: 20px;
+  background: url(img/hearts.png) no-repeat;
+}
+.coins_field{
+   margin-left: 300px;
+   font-weight: 500;
+}
+.coins_count, 
+.timer_count{
+  color: #41c4ff;
+   font-weight: 700;
+}
+.timer_field{
+   margin-left: 470px;
+   font-weight: 500;
+}
+.result{
+  z-index: 1;
+  position: absolute;
+  background-color: #993636;;
+  width: 250px;
+  height: 250px;
+  margin-top: 15%;
+  margin-left: calc(50% - 127px);
+  text-align: center;
+  border: 2px solid black;
+}
+.button_2{
+  margin-top: 90px;
+}
+.your_result{
+  padding-top: 60px;
+  color: floralwhite;
+}
