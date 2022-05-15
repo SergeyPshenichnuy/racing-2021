@@ -1,1 +1,1 @@
-#https://github.com/SergeyPshenichnuy/racing-2021.git
+#https://sergeypshenichnuy.github.io/racing-2021.git/
